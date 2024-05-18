@@ -28,8 +28,9 @@ Our proposed architecture comprises the following four layers: the manifold redu
 
 4. **Federated Layer**: Deep neural networks are implemented in this layer. For the transfer learning setting, the parameters of neural networks are updated by federated aggregation.
 
-
 ---
+![Federated Transfer Learning Framework architecture](https://github.com/jpordoy/AMBER/blob/master/Images/model_plot.png)
+
 
 ### How To Run The Code
 

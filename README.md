@@ -11,6 +11,9 @@ July 20-24, 2020 via the EMBS Virtual Academy
 AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality. By leveraging a hybrid neural network structure composed of one-dimensional Convolutional Neural Networks (1D CNNs) and Bidirectional Long Short-Term Memory Networks (BiLSTMs), AMBER effectively captures temporal dependencies and salient features from multiple modalities simultaneously.
 
 ---
+![Federated Transfer Learning Framework architecture](Images/AMBER.png)
+---
+
 
 ## Network Architecture
 
@@ -106,7 +109,7 @@ For subject-specific analysis, run `SPDNet_Local_Learning.py`
 
 We have engineered a Federated Transfer Learning (FTL) framework designed for a range of biomedical applications. The FTL framework incorporates various federated learning architectures including FATE and PyTorch, and it caters to biomedical machine learning tasks involving diverse types of data. We posit that the FTL framework offers a user-friendly tool for researchers to explore machine learning tasks pertaining to various biomedical data types, while ensuring privacy protection and superior performance. We intend to open-source the FTL framework in the near future.
 
-![Federated Transfer Learning Framework architecture](Images/AMBER.png)
+![Federated Transfer Learning Framework architecture](Images/mdoel_plot.png)
 
 ---
 

@@ -1,6 +1,5 @@
-# Federated Transfer Learning For EEG Signal Classification
-
-Authors: Ce Ju, Dashan Gao, Ravikiran Mane, Ben Tan, Yang Liu and Cuntai Guan
+# AMBER MODEL
+Author: Dr Jamie Pordoy
 
 Published in: 42nd Annual International Conferences of the IEEE Engineering in Medicine and Biology Society in 
 conjunction with the 43rd Annual Conference of the Canadian Medical and Biological Engineering Society (EMBS)
@@ -9,10 +8,7 @@ July 20-24, 2020 via the EMBS Virtual Academy
 ---
 
 ## Introduction
-
-<!--- ![Federated Learning](https://github.com/DashanGao/Federated-Transfer-Leraning-for-EEG/blob/master/imgs/federated_learning.png =250*250)![Federated Learning EEG](https://github.com/DashanGao/Federated-Transfer-Leraning-for-EEG/blob/master/imgs/federated_learning_eeg.png =250*250) --->
-
-The impact of deep learning (DL) methodologies within the sphere of Brain-Computer Interfaces (BCI) for the categorization of electroencephalographic (EEG) transcriptions has been stymied by the dearth of expansive datasets. Constraints linked to privacy concerns surrounding EEG signals impede the creation of large EEG-BCI datasets through the amalgamation of various smaller datasets for the shared training of the machine learning model. Consequently, this paper presents a novel privacy-preserving DL framework named federated transfer learning (FTL) for EEG categorization, which is predicated on the federated learning structure. Utilizing the single-trial covariance matrix, this proposed framework extracts common discriminative information from multi-subject EEG data via domain adaptation techniques. The effectiveness of the proposed framework is assessed against the PhysioNet dataset for a two-class motor imagery classification. All while circumventing direct data sharing, our FTL method attains a 2% improvement in classification accuracy in a subject-adaptive analysis. Moreover, when multi-subject data is not available, our framework delivers a 6% increase in accuracy in comparison to other leading-edge DL frameworks.
+AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality. By leveraging a hybrid neural network structure composed of one-dimensional Convolutional Neural Networks (1D CNNs) and Bidirectional Long Short-Term Memory Networks (BiLSTMs), AMBER effectively captures temporal dependencies and salient features from multiple modalities simultaneously.
 
 ---
 
@@ -110,7 +106,7 @@ For subject-specific analysis, run `SPDNet_Local_Learning.py`
 
 We have engineered a Federated Transfer Learning (FTL) framework designed for a range of biomedical applications. The FTL framework incorporates various federated learning architectures including FATE and PyTorch, and it caters to biomedical machine learning tasks involving diverse types of data. We posit that the FTL framework offers a user-friendly tool for researchers to explore machine learning tasks pertaining to various biomedical data types, while ensuring privacy protection and superior performance. We intend to open-source the FTL framework in the near future.
 
-![Federated Transfer Learning Framework architecture](https://github.com/DashanGao/Federated-Transfer-Leraning-for-EEG/blob/master/imgs/ftl_framework.png)
+![Federated Transfer Learning Framework architecture](Images/AMBER.png)
 
 ---
 

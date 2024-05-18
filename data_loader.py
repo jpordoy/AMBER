@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from scipy import stats
-from .config import config
+from config import config
 
 class DataLoader:
     def __init__(self, dataframe, time_steps, step, target_column):

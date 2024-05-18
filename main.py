@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from data_loader import CustomDataLoader
+from data_loader import DataLoader
 from data_formatter import DataFormatter
 from model import Amber
 from kfold_cv import KFoldCrossValidation
@@ -13,7 +13,7 @@ df = pd.read_csv(mypath)
 target_column = 'label'  # Name of the target column
 
 # Step 1: Load Data
-data_loader = CustomDataLoader(dataframe=df, time_steps=config.N_TIME_STEPS, step=config.step, target_column=target_column)
+data_loader = DataLoader(dataframe=df, time_steps=config.N_TIME_STEPS, step=config.step, target_column=target_column)
 segments, labels = data_loader.load_data()
 
 # Step 2: Format Data

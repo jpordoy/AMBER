@@ -33,11 +33,7 @@ Our proposed architecture comprises the following four layers: the manifold redu
 
 
 ### How To Run The Code
-
-We extend our gratitude to the open-source community, which facilitates the wider dissemination of the work of other researchers as well as our own. The coding style in this repo is relatively rough. We welcome anyone to refactor it to make it more effective. The codebase for our models builds heavily on the following repositories:
-[<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann) 
-[<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet)
-[<img src="https://img.shields.io/badge/GitHub-mne-b31b1b"></img>](https://github.com/mne-tools/mne-python)
+We extend our gratitude to the open-source community, whose contributions have significantly aided the development and dissemination of our work. While the coding style in this repository is still in its early stages, we welcome and encourage contributions to help refactor and improve its efficiency and readability. We appreciate the collective effort that makes advancements in multimodal detection and classification possible.)
 
 ### Data pre-processing
 

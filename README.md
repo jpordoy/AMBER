@@ -8,7 +8,9 @@ July 20-24, 2020 via the EMBS Virtual Academy
 ---
 
 ## Introduction
-AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality. By leveraging a hybrid neural network structure composed of one-dimensional Convolutional Neural Networks (1D CNNs) and Bidirectional Long Short-Term Memory Networks (BiLSTMs), AMBER effectively captures temporal dependencies and salient features from multiple modalities simultaneously.
+AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality. 
+
+We extend our gratitude to the open-source community, whose contributions have significantly aided the development and dissemination of our work. While the coding style in this repository is still in its early stages, we welcome and encourage contributions to help refactor and improve its efficiency and readability. We appreciate the collective effort that makes advancements in multimodal detection and classification possible.)
 
 ---
 ![Federated Transfer Learning Framework architecture](Images/AMBER.png)
@@ -33,10 +35,6 @@ Our proposed architecture comprises the following four layers: the manifold redu
 
 
 ### How To Run The Code
-We extend our gratitude to the open-source community, whose contributions have significantly aided the development and dissemination of our work. While the coding style in this repository is still in its early stages, we welcome and encourage contributions to help refactor and improve its efficiency and readability. We appreciate the collective effort that makes advancements in multimodal detection and classification possible.)
-
-### Data pre-processing
-
 Please put your training data and labels into a directory "raw_data/" in this project.
 The package `mne` is adopted for EEG data pro-processing. To generate the required data as SPDNet input, please refer to the following example code: 
 

@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 from data_loader import DataLoader
 from data_formatter import DataFormatter
-from model import Amber
+from model_rf import Amber_RF
+#from model import Amber
 from kfold_cv import KFoldCrossValidation
 from evaluator import evaluate_model_performance
 from config import config
@@ -23,8 +24,11 @@ X_train_reshaped, X_test_reshaped, y_train, y_test = data_formatter.format_data(
 # Reshape y_test correctly
 y_test_reshaped = np.asarray(y_test, dtype=np.float32)
 
-# Initialize model
-ts_model = Amber(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=config.N_CLASSES)
+# Initialize model with concat
+#ts_model = Amber(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=config.N_CLASSES)
+
+# Initialize model with residual fusion layer
+ts_model = Amber_RF(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=config.N_CLASSES)
 
 # Create an instance of KFoldCrossValidation
 kfold_cv = KFoldCrossValidation(ts_model, [X_train_reshaped['Feature_1'], X_train_reshaped['Feature_2']], y_train)

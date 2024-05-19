@@ -45,57 +45,48 @@ Please put your training data and labels into a directory "raw_data/" in this pr
 The package `mne` is adopted for EEG data pro-processing. To generate the required data as SPDNet input, please refer to the following example code: 
 
 ```python        
-from mne import Epochs, pick_types, events_from_annotations
-from mne.io import concatenate_raws
-from mne.io.edf import read_raw_edf
-from mne.datasets import eegbci
+import pandas as pd
+import numpy as np
+from data_loader import DataLoader
+from data_formatter import DataFormatter
+from model import Amber
+from kfold_cv import KFoldCrossValidation
+from evaluator import evaluate_model_performance
+from config import config
 
-# Set parameters and read data
+# Define your DataFrame and parameter
+mypath = 'Data/Train.csv'
+df = pd.read_csv(mypath)
+target_column = 'label'  # Name of the target column
 
-# avoid classification of evoked responses by using epochs that start 1s after
-# cue onset.
-tmin, tmax = 1., 2.
-event_id = dict(hands=2, feet=3)
-subject = 7
-runs = [6, 10, 14]  # motor imagery: hands vs feet
+# Step 1: Load Data
+data_loader = DataLoader(dataframe=df, time_steps=config.N_TIME_STEPS, step=config.step, target_column=target_column)
+segments, labels = data_loader.load_data()
 
-raw_files = [
-    read_raw_edf(f, preload=True) for f in eegbci.load_data(subject, runs)
-]
-raw = concatenate_raws(raw_files)
+# Step 2: Format Data
+data_formatter = DataFormatter(config=config)
+X_train_reshaped, X_test_reshaped, y_train, y_test = data_formatter.format_data(segments, labels)
 
-picks = pick_types(
-    raw.info, meg=False, eeg=True, stim=False, eog=False, exclude='bads')
-# subsample elecs
-picks = picks[::2]
+# Reshape y_test correctly
+y_test_reshaped = np.asarray(y_test, dtype=np.float32)
 
-# Apply band-pass filter
-raw.filter(7., 35., method='iir', picks=picks)
+# Initialize model
+ts_model = Amber(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=config.N_CLASSES)
 
-events, _ = events_from_annotations(raw, event_id=dict(T1=2, T2=3))
+# Create an instance of KFoldCrossValidation
+kfold_cv = KFoldCrossValidation(ts_model, [X_train_reshaped['Feature_1'], X_train_reshaped['Feature_2']], y_train)
 
-# Read epochs (train will be done only between 1 and 2s)
-# Testing will be done with a running classifier
-epochs = Epochs(
-    raw,
-    events,
-    event_id,
-    tmin,
-    tmax,
-    proj=True,
-    picks=picks,
-    baseline=None,
-    preload=True,
-    verbose=False)
-labels = epochs.events[:, -1] - 2
+# Run the cross-validation
+kfold_cv.run()
 
-# cross validation
-cv = KFold(n_splits=10, random_state=42)
-# get epochs
-epochs_data_train = 1e6 * epochs.get_data()
+# Evaluate the model performance
+evaluation_results = evaluate_model_performance(ts_model, [X_test_reshaped['Feature_1'], X_test_reshaped['Feature_2']], y_test_reshaped)
 
-# compute covariance matrices
-cov_data_train = Covariances().transform(epochs_data_train)
+# Access individual metrics
+print("Accuracy:", evaluation_results["accuracy"])
+print("F1 Score:", evaluation_results["f1"])
+print("Cohen's Kappa:", evaluation_results["cohen_kappa"])
+
 ```
 
 ### Model training

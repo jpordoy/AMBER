@@ -1,10 +1,6 @@
 # AMBER MODEL
 Author: Dr Jamie Pordoy
 
-Published in: 42nd Annual International Conferences of the IEEE Engineering in Medicine and Biology Society in 
-conjunction with the 43rd Annual Conference of the Canadian Medical and Biological Engineering Society (EMBS)
-July 20-24, 2020 via the EMBS Virtual Academy
-
 ---
 
 ## Introduction

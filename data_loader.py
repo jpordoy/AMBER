@@ -17,7 +17,8 @@ class DataLoader:
             mag = self.dataframe['rawData'].values[i: i + config.N_TIME_STEPS]
             hr = self.dataframe['hr'].values[i: i + config.N_TIME_STEPS]
             segment = np.column_stack((mag, hr))
-            label_mode = stats.mode(self.dataframe['label'][i: i + config.N_TIME_STEPS])
+            label_mode = stats.mode(self.dataframe['label'][i: i + config.N_TIME_STEPS]) #Code for Python 3.7
+            #label_mode = np.unique(self.dataframe['label'][i: i + config.N_TIME_STEPS])[0] #change this line for python 3.12
             if isinstance(label_mode.mode, np.ndarray):
                 label = label_mode.mode[0]
             else:

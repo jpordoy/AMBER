@@ -149,7 +149,7 @@ print("Cohen's Kappa:", evaluation_results["cohen_kappa"])
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="Images/model.png" alt="screenshot" />
+  <img src="Images/model_plot.png" alt="screenshot" />
 </div>
 
 

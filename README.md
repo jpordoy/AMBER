@@ -10,7 +10,7 @@ AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) 
 We extend our gratitude to the open-source community, whose contributions have significantly aided the development and dissemination of our work. While the coding style in this repository is still in its early stages, we welcome and encourage contributions to help refactor and improve its efficiency and readability. We appreciate the collective effort that makes advancements in multimodal detection and classification possible.)
 
 ---
-![Federated Transfer Learning Framework architecture](Images/AMBER.png)
+![Federated Transfer Learning Framework architecture](Images/3.png)
 ---
 
 

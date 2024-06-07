@@ -45,7 +45,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="Images/AMBER.png" alt="screenshot" />
+  <img src="Images/model_plot.png" alt="screenshot" />
 </div>
 
 
@@ -144,13 +144,6 @@ print("Cohen's Kappa:", evaluation_results["cohen_kappa"])
 
 ```
 
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="Images/model_plot.png" alt="screenshot" />
-</div>
 
 
 

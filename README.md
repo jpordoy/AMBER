@@ -1,7 +1,7 @@
 # AMBER MODEL
 Author: Dr Jamie Pordoy
 
-![Federated Transfer Learning Framework architecture]([Images/AMBER.png](https://icons.iconarchive.com/icons/erudus/allergy/256/treenut-allergy-amber-icon.png))
+![Federated Transfer Learning Framework architecture](Amber_Icon.png)
 
 
 ## Introduction

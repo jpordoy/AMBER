@@ -1,11 +1,8 @@
 # AMBER MODEL
 Author: Dr Jamie Pordoy
 
-Published in: 42nd Annual International Conferences of the IEEE Engineering in Medicine and Biology Society in 
-conjunction with the 43rd Annual Conference of the Canadian Medical and Biological Engineering Society (EMBS)
-July 20-24, 2020 via the EMBS Virtual Academy
+![Federated Transfer Learning Framework architecture]([Images/AMBER.png](https://icons.iconarchive.com/icons/erudus/allergy/256/treenut-allergy-amber-icon.png))
 
----
 
 ## Introduction
 AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality. 

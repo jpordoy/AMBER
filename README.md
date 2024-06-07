@@ -45,7 +45,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="Images/Amber.png" alt="screenshot" />
+  <img src="Images/AMBER.png" alt="screenshot" />
 </div>
 
 
@@ -143,6 +143,14 @@ print("F1 Score:", evaluation_results["f1"])
 print("Cohen's Kappa:", evaluation_results["cohen_kappa"])
 
 ```
+
+
+<!-- Screenshots -->
+### :camera: Screenshots
+
+<div align="center"> 
+  <img src="Images/model.png" alt="screenshot" />
+</div>
 
 
 

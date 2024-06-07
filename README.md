@@ -10,11 +10,10 @@ Maybe you can mention me or this repo in the acknowledgements too
 
   <img src="Images/3.png" alt="logo" width="200" height="auto" />
 
-  <h1>Awesome Readme Template</h1>
-  
+  Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion
   <p>
-    An awesome README template for your projects! 
-  </p>
+    
+      </p>
   
   
 <!-- Badges -->

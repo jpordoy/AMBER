@@ -38,7 +38,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="Images/model_plot.png" alt="screenshot" />
+  <img src="Images/Branches_2.png" alt="screenshot" />
 </div>
 
 

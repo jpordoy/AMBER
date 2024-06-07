@@ -1,7 +1,3 @@
-# AMBER MODEL
-Author: Dr Jamie Pordoy
-
-![Federated Transfer Learning Framework architecture](amber_icon.png)
 
 
 ## Introduction

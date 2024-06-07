@@ -10,10 +10,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 
   <img src="Images/3.png" alt="logo" width="200" height="auto" />
 
-  <p>
-  Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion
-    
-      </p>
+  <p>Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion</p>
   
   
 <!-- Badges -->

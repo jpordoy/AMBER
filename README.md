@@ -56,28 +56,16 @@ Ensure you have the following installed on your system:
 
 ### Installation
 
-
 # Navigate to the Project Directory
 ```bash
  cd your-repo
 ```
 
-# Install Python Dependencies
-```bash
-pip install -r requirements.txt
-```
-This command will install all the necessary Python dependencies listed in the requirements.txt file.
-
-https://github.com/jpordoy/AMBER.gitz
+# Clone Repository
 ```bash
 git clone https://github.com/jpordoy/AMBER.git
-cd your-repo
-pip install -r requirements.txt
 ```
 
-
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
 
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites

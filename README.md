@@ -7,9 +7,8 @@
 Introducing our novel model for biomedical signal processing, specifically designed for multimodal or multisignal tasks such as EEG and non-EEG detection. This model adeptly handles multiple input feature modalities or signals by independently processing them through distinct pipelines. Each pipeline is attention-guided and facilitates the input signal through a series of convolutional blocks for feature extraction, followed by temporal modeling in an LSTM. The attention-guided output of each pipeline is then passed to a custom residual fusion layer, which creates a fused representation of the outputs from all branches. By concatenating the outputs of each pipeline into a unified representation, the model then propagates this through a series of dense blocks to accurately classify the target class. This innovative approach ensures robust and efficient processing of complex biomedical signals, enhancing the accuracy and reliability of multisignal analysis tasks.
     </p>
 
-  
-  
 
+  
 </div>
 
 <br />
@@ -43,6 +42,29 @@ Introducing our novel model for biomedical signal processing, specifically desig
 <div align="center"> 
   <img src="Images/Branches_2.png" alt="screenshot" />
 </div>
+# Project Title
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- Python
+- `pip` (Python package installer)
+
+### Installation
+
+Follow these steps to set up the environment and install the necessary Python dependencies.
+
+1. **Clone the Repository**
+
+   ```html
+   <pre>
+   <code>
+   git clone https://github.com/your-username/your-repo.git
+   </code>
+   </pre>
 
 
 

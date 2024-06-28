@@ -3,7 +3,9 @@
   <img src="Images/3.png" alt="logo" width="200" height="auto" />
 
   <p>Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion</p>
-    <p>This read me is under development</p>
+    <p>
+Introducing our novel model for biomedical signal processing, specifically designed for multimodal or multisignal tasks such as EEG and non-EEG detection. This model adeptly handles multiple input feature modalities or signals by independently processing them through distinct pipelines. Each pipeline is attention-guided and facilitates the input signal through a series of convolutional blocks for feature extraction, followed by temporal modeling in an LSTM. The attention-guided output of each pipeline is then passed to a custom residual fusion layer, which creates a fused representation of the outputs from all branches. By concatenating the outputs of each pipeline into a unified representation, the model then propagates this through a series of dense blocks to accurately classify the target class. This innovative approach ensures robust and efficient processing of complex biomedical signals, enhancing the accuracy and reliability of multisignal analysis tasks.
+    </p>
 
   
   

@@ -68,8 +68,9 @@ pip install -r requirements.txt
 ```
 This command will install all the necessary Python dependencies listed in the requirements.txt file.
 
+https://github.com/jpordoy/AMBER.gitz
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/jpordoy/AMBER.git
 cd your-repo
 pip install -r requirements.txt
 ```

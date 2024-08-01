@@ -2,12 +2,7 @@
 
   <img src="Images/3.png" alt="logo" width="200" height="auto" />
 
-  <p>Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion (ReadMe Under Construction)</p>
-    <p>
-
-    </p>
-
-
+  <p>AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is a deep learning architecture designed for multimodal seizure detection tasks. It addresses the challenges of processing heterogeneous data sources by constructing dedicated branches for each feature modality.</p>
   
 </div>
 

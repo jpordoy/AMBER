@@ -10,7 +10,7 @@ AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) 
 
 <br />
 
-# :notebook_with_decorative_cover: Table of Content
+# :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)  
   * [Tech Stack](#space_invader-tech-stack)

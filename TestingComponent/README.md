@@ -1,6 +1,6 @@
-# Seizure Event Classification using Machine Learning
+# Seizure Event Classification
 
-This project involves building and testing a machine learning model to classify time-series data related to **seizure events** using TensorFlow. The `ModelTester` class is responsible for loading the trained model, performing predictions on both individual time steps and entire events, and visualizing the input/output shapes.
+This component tests AMBER models in classifying time-series data related to **Open Seizure Databases** using TensorFlow. The `ModelTester` class is responsible for loading the trained model, performing predictions on both individual time steps and entire events, and visualising the input/output shapes.
 
 ---
 
@@ -104,6 +104,6 @@ The main function that drives the process:
 Replace the `path` variable with the path to your dataset file. Ensure the dataset is in CSV format and contains columns such as `rawData`, `ppg`, `label`, and `eventID`.
 
 ```python
-path = "Dataset/ipd_dataset.csv"
+path = "CSV file path"
 df = pd.read_csv(path)
 

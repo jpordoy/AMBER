@@ -9,7 +9,7 @@ This component tests AMBER models in classifying time-series data related to **O
 The **`ModelTester`** class contains methods for:
 - Preprocessing data
 - Making predictions for time steps and events
-- Visualizing input/output shapes
+- Visualising input/output shapes
 
 ---
 
@@ -17,10 +17,10 @@ The **`ModelTester`** class contains methods for:
 
 ### 1. **`ModelTester` Class**
 
-The `ModelTester` class is the core of the script, containing methods for preprocessing the data, making predictions, and visualizing the results.
+The `ModelTester` class contains methods for preprocessing the data, making predictions, and visualising the results.
 
 #### **`__init__(self, model, time_steps)`**
-Initializes the class with the model and time steps.
+Initialises the class with the model and time steps.
 
 - `model`: The trained machine learning model (e.g., Keras model).
 - `time_steps`: Number of time steps the model requires for classification (e.g., 125).
@@ -76,7 +76,7 @@ Makes predictions for all events in the input DataFrame by processing the data i
 ---
 
 #### **`visualise_shapes(data, segments, hr, prediction)`**
-Visualizes the shapes of the original data, reshaped segments, heart rate data, and model prediction.
+Visualises the shapes of the original data, reshaped segments, heart rate data, and model prediction.
 
 - `data`: The original raw data.
 - `segments`: The reshaped segment data.

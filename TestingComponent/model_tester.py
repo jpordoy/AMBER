@@ -14,10 +14,10 @@ class ModelTester:
         return filtered_df
 
     def preprocess_single_timestep(self, data):
-        segments = data[['rawData']].values.reshape(1, self.time_steps, 1)
+        rawData = data[['rawData']].values.reshape(1, self.time_steps, 1)
         hr = data[['ppg']].values.reshape(1, self.time_steps, 1)
         actual_label = data['label'].iloc[0]  # Extract the actual label
-        return segments, hr, actual_label
+        return rawData, hr, actual_label
 
     def predict(self, dataframe):
         if len(dataframe) < self.time_steps:
@@ -30,6 +30,7 @@ class ModelTester:
         reshaped_segments, reshaped_hr, actual_label = self.preprocess_single_timestep(single_time_step_data)
         prediction = self.model.predict([reshaped_segments, reshaped_hr])
         predicted_class = int(np.argmax(prediction))
+
         return predicted_class, prediction, actual_label
 
     def batch_predict(self, dataframe, step=1):
@@ -42,6 +43,7 @@ class ModelTester:
             all_event_data = dataframe.iloc[start_index:start_index + self.time_steps]
             reshaped_segments, reshaped_hr, actual_label = self.preprocess_single_timestep(all_event_data)
             prediction = self.model.predict([reshaped_segments, reshaped_hr])
+
             predicted_class = int(np.argmax(prediction))
             results.append({
                 'start_index': start_index,
@@ -51,6 +53,14 @@ class ModelTester:
             })
 
         return pd.DataFrame(results)
+
+    def visualize_shapes(self, data, rawData, hr, prediction):
+        # Visualize the original data and reshaped input
+        print("Original data shape:", data.shape)
+        print("Acceleration (RawData) shape:", rawData.shape)
+        print("HR shape:", hr.shape)
+        print("Prediction shape:", prediction.shape)
+
 
 def main():
     # Path to the dataset
@@ -78,6 +88,14 @@ def main():
     print("Predicted class:", predicted_class)
     print("Probability distribution:", probability_distribution)
     print("Actual label:", actual_label)
+
+    # Visualize the shapes after all predictions
+    print("*** Visualizing Input/Output Shapes ***")
+    # Visualize a sample (the first segment in this case)
+    reshaped_segments, reshaped_hr, _ = model_tester.preprocess_single_timestep(df.iloc[0:125])
+    prediction = model.predict([reshaped_segments, reshaped_hr])
+    model_tester.visualize_shapes(df.iloc[0:125], reshaped_segments, reshaped_hr, prediction)
+
 
 if __name__ == "__main__":
     main()

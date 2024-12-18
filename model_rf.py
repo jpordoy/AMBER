@@ -1,8 +1,15 @@
-from keras.models import Model
-from keras.layers import LSTM, Dense, Dropout, MaxPooling1D, Input, Bidirectional, Conv1D, Concatenate, Permute, Reshape, Multiply, GlobalMaxPooling1D, Attention, Activation, BatchNormalization
-from keras.optimizers import RMSprop
-from keras.losses import categorical_crossentropy
-from fusion import FusionLayer
+from tensorflow.keras.layers import (
+    Input, Conv1D, BatchNormalization, Activation,
+    MaxPooling1D, Bidirectional, LSTM, Dense, Dropout,
+    Reshape, Permute, Attention, Add, GlobalMaxPooling1D
+)
+from tensorflow.keras.models import Model
+from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.regularizers import l2
+import tensorflow as tf
+from config import Config as config
+
 
 
 class Amber_RF:
@@ -23,7 +30,7 @@ class Amber_RF:
         b1 = MaxPooling1D(pool_size=2)(b1)
         b2 = self.conv_block(b1, filters=128, kernel_size=3)
         b2 = MaxPooling1D(pool_size=2)(b2)
-        b3 = self.conv_block(b2, filters=256, kernel_size=3)
+        b3 = self.conv_block(b2, filters=128, kernel_size=3)
         b3 = MaxPooling1D(pool_size=2)(b3)
         encoded_rows = Bidirectional(LSTM(self.row_hidden, return_sequences=True))(b3)
         return LSTM(self.col_hidden)(encoded_rows)
@@ -31,48 +38,68 @@ class Amber_RF:
     def build_model(self, num_features, input_shape):
         input_layers = []
         lstm_outputs = []
+
         for i in range(num_features):
             input_layer = Input(shape=input_shape, name=f'input_feature_{i+1}')
             input_layers.append(input_layer)
             lstm_output = self.lstm_pipe(Permute(dims=(1, 2))(input_layer))
-            lstm_output_reshaped = Reshape((-1,))(lstm_output)  
-            lstm_outputs.append(lstm_output_reshaped)  
-        
+            lstm_output_reshaped = Reshape((-1,))(lstm_output)
+            lstm_outputs.append(lstm_output_reshaped)
+
         attention_outputs = []
         for i, lstm_output in enumerate(lstm_outputs):
             lstm_output_reshaped = Reshape((-1, lstm_output.shape[-1]))(lstm_output)
-            attention_output = Attention()([lstm_output_reshaped, lstm_output_reshaped])
+            attention_output = Attention()([lstm_output_reshaped, lstm_output_reshaped])  # Element-wise addition
             attention_outputs.append(attention_output)
-        
-        weighted_features = []
-        for i, (lstm_output, attention_output) in enumerate(zip(lstm_outputs, attention_outputs)):
-            weighted_feature = Multiply()([lstm_output, attention_output])
-            weighted_features.append(weighted_feature)
-            
-            
-        # Replace Concatenate with FusionLayer
-        fused_features = FusionLayer()(weighted_features)
-        
-        dense_output = Dense(128, activation='relu')(fused_features)
+
+        # Combine attention outputs (equivalent to FusionLayer)
+        fused_features = Add()(attention_outputs)
+
+        # Rest of the model architecture remains the same
+
+        dense_output = Dense(64, activation='relu', kernel_regularizer=l2(0.0001))(fused_features)
         dense_output = BatchNormalization()(dense_output)
-        dense_output = Dropout(0.5)(dense_output)
-        prediction = Dense(self.num_classes, activation='softmax')(GlobalMaxPooling1D()(fused_features))
+        dense_output = Dropout(0.3)(dense_output)  # Increase dropout rate for better regularization
+        dense_output = Dense(64, activation='relu', kernel_regularizer=l2(0.0001))(dense_output)
+        dense_output = BatchNormalization()(dense_output)
+        dense_output = Dropout(0.3)(dense_output)  # Increase dropout rate for better regularization
+        prediction = Dense(self.num_classes, activation='softmax')(GlobalMaxPooling1D()(dense_output))
+
         model = Model(inputs=input_layers, outputs=prediction)
-        
         self.model = model
 
     def compile_model(self):
-        self.model.compile(optimizer='RMSprop', loss='categorical_crossentropy', metrics=['accuracy'])
+        optimizer = RMSprop(learning_rate=0.000001)  # Adjust learning rate as needed
+        self.model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=['accuracy'])
 
-    def train_model(self, X_train_list, y_train, X_val_list, y_val, epochs=10, batch_size=32):
-        history = self.model.fit(X_train_list, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_val_list, y_val), verbose=1)
+    def train_model(self, X_train_list, y_train, X_val_list, y_val, epochs=config.epochs, batch_size=config.batch_size):
+        # Define the callbacks
+        reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3, min_lr=0.000001, verbose=1)
+        early_stopping = EarlyStopping(monitor='val_loss', patience=15, restore_best_weights=True, verbose=1)
+
+        # Train the model with class weights and callbacks
+        history = self.model.fit(
+            X_train_list, y_train,
+            epochs=config.epochs,
+            batch_size=config.batch_size,
+            validation_data=(X_val_list, y_val),
+            verbose=1,
+            callbacks=[reduce_lr]
+        )
         return history
 
     def evaluate_model(self, X_test, y_test, batch_size=32):
-        return self.model.evaluate(X_test, y_test, batch_size=batch_size)
+        return self.model.evaluate(X_test, y_test, batch_size=config.batch_size)
 
     def predict(self, X):
         return self.model.predict(X)
 
     def architecture(self):
         return self.model.summary()
+
+    def save_model(self, file_path):
+        if self.model is not None:
+            self.model.save(file_path)
+            print(f"Model saved to {file_path}")
+        else:
+            raise ValueError("The model has not been built or trained yet.")

@@ -7,12 +7,13 @@ from model_rf import Amber_RF
 #from model import Amber
 from kfold_cv import KFoldCrossValidation
 from evaluator import evaluate_model_performance
-from config import config
-
+from config import Config as config
 # Define your DataFrame and parameter
 mypath = 'Data/Train.csv'
 df = pd.read_csv(mypath)
 target_column = 'label'  # Name of the target column
+
+
 
 # Step 1: Load Data
 data_loader = DataLoader(dataframe=df, time_steps=config.N_TIME_STEPS, step=config.step, target_column=target_column)

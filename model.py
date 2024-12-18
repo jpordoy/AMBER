@@ -2,6 +2,7 @@ from keras.models import Model
 from keras.layers import LSTM, Dense, Dropout, MaxPooling1D, Input, Bidirectional, Conv1D, Concatenate, Permute, Reshape, Multiply, GlobalMaxPooling1D, Attention, Activation, BatchNormalization
 from keras.optimizers import RMSprop
 from keras.losses import categorical_crossentropy
+from config import Config as config
 
 class Amber:
     def __init__(self, row_hidden, col_hidden, num_classes):

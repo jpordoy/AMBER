@@ -1,4 +1,4 @@
-from config import config
+from config import Config as config
 
 
 class SingleTrainingRun:

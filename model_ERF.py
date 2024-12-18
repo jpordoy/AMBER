@@ -3,7 +3,7 @@ from keras.layers import LSTM, Dense, Dropout, MaxPooling1D, Input, Bidirectiona
 from keras.optimizers import RMSprop
 from keras.losses import categorical_crossentropy
 from fusion import FusionLayer
-import config
+from config import Config as config
 from enhanced_residual_fusion import EnhancedFusionLayer
 
 

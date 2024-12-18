@@ -1,4 +1,4 @@
-class config:
+class Config:
 
     #Globals
     batch_size = 8

@@ -6,3 +6,8 @@ json
 tensorflow
 seaborn
 os
+imblearn
+tqdm
+wfdb
+warnings
+math

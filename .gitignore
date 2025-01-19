@@ -12,10 +12,12 @@ env/
 *.env
 
 # Ignore log files
-*.log
+#*.log
 
 # Ignore dataset and other large files
 Data/ipd_dataset.csv
+Data/binary_osd_labels.csv
+Data/ipd_labels.csv
 
 # Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/

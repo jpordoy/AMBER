@@ -1,0 +1,425 @@
+2025-01-19 10:53:51,299 - INFO - 1. Connecting to OSDB
+2025-01-19 10:53:53,283 - INFO - Successfully connected to and processed OSDB.
+2025-01-19 10:53:53,283 - INFO - 2. Reshaping Dataset
+2025-01-19 10:53:55,687 - INFO - Successfully reshaped dataset.
+2025-01-19 10:53:55,688 - INFO - 3. Interpolating Dataset
+2025-01-19 10:53:55,723 - INFO - Successfully interpolated dataset.
+2025-01-19 10:55:57,920 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 10:55:59,842 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 10:55:59,843 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 10:56:01,959 - INFO - Dataset reshaped successfully.
+2025-01-19 10:56:01,960 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 10:56:01,996 - INFO - Interpolation completed successfully.
+2025-01-19 10:56:01,996 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 10:56:03,011 - INFO - Dataset successfully structured into time steps.
+2025-01-19 10:56:03,011 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 10:56:03,014 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 10:56:03,014 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 10:56:03,020 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 10:56:03,021 - INFO - Step 7: Initializing AMBER model and performing K-Fold Cross Validation.
+2025-01-19 10:56:03,021 - INFO - AMBER model initialization complete.
+2025-01-19 11:01:37,424 - INFO - K-Fold Cross Validation completed successfully.
+2025-01-19 11:01:37,424 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 11:01:42,305 - INFO - Model evaluation completed. Results:
+2025-01-19 11:01:42,306 - INFO - Accuracy: 0.4704
+2025-01-19 11:01:42,306 - INFO - F1 Score: 0.3063
+2025-01-19 11:01:42,307 - INFO - Pipeline execution completed successfully.
+2025-01-19 11:29:13,045 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 11:29:15,025 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 11:29:15,026 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 11:29:17,100 - INFO - Dataset reshaped successfully.
+2025-01-19 11:29:17,100 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 11:29:17,131 - INFO - Interpolation completed successfully.
+2025-01-19 11:29:17,131 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 11:29:18,070 - INFO - Dataset successfully structured into time steps.
+2025-01-19 11:29:18,070 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 11:29:18,072 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 11:29:18,072 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 11:29:18,078 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 11:29:18,078 - INFO - Step 7: Initializing AMBER model and performing K-Fold Cross Validation.
+2025-01-19 11:29:18,078 - INFO - AMBER model initialization complete.
+2025-01-19 11:33:09,705 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 11:33:11,651 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 11:33:11,651 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 11:33:13,894 - INFO - Dataset reshaped successfully.
+2025-01-19 11:33:13,894 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 11:33:13,922 - INFO - Interpolation completed successfully.
+2025-01-19 11:33:13,922 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 11:33:14,929 - INFO - Dataset successfully structured into time steps.
+2025-01-19 11:33:14,929 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 11:33:14,931 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 11:33:14,931 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 11:33:14,940 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 11:33:14,940 - INFO - Step 7: Initializing AMBER model and performing K-Fold Cross Validation.
+2025-01-19 11:33:14,941 - INFO - AMBER model initialization complete.
+2025-01-19 11:44:12,441 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 11:44:14,389 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 11:44:14,390 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 11:44:16,513 - INFO - Dataset reshaped successfully.
+2025-01-19 11:44:16,515 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 11:44:16,544 - INFO - Interpolation completed successfully.
+2025-01-19 11:44:16,545 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 11:44:17,469 - INFO - Dataset successfully structured into time steps.
+2025-01-19 11:44:17,469 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 11:44:17,471 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 11:44:17,472 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 11:44:17,479 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 11:44:17,480 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 11:44:17,480 - INFO - AMBER model initialized.
+2025-01-19 11:44:17,481 - INFO - Training started.
+2025-01-19 12:04:51,280 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 12:04:51,280 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 12:04:57,849 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 12:04:57,849 - INFO - - Accuracy: 0.4696
+2025-01-19 12:04:57,849 - INFO - - F1 Score: 0.3001
+2025-01-19 12:04:57,850 - INFO - Step 7: Save model
+2025-01-19 12:04:57,850 - ERROR - Saving model error: Failed to save AMBER model as .keras file format. Reason: save_model() missing 1 required positional argument: 'path'
+Traceback (most recent call last):
+  File "main.py", line 204, in main
+    ts_model.save_model()
+TypeError: save_model() missing 1 required positional argument: 'path'
+2025-01-19 12:11:26,759 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 12:11:28,775 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 12:11:28,775 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 12:11:30,877 - INFO - Dataset reshaped successfully.
+2025-01-19 12:11:30,877 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 12:11:30,907 - INFO - Interpolation completed successfully.
+2025-01-19 12:11:30,908 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 12:11:31,867 - INFO - Dataset successfully structured into time steps.
+2025-01-19 12:11:31,868 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 12:11:31,870 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 12:11:31,870 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 12:11:31,876 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 12:11:31,876 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 12:11:31,877 - INFO - AMBER model initialized.
+2025-01-19 12:11:31,877 - INFO - Training started.
+2025-01-19 12:12:31,154 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 12:12:33,145 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 12:12:33,146 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 12:12:35,397 - INFO - Dataset reshaped successfully.
+2025-01-19 12:12:35,397 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 12:12:35,426 - INFO - Interpolation completed successfully.
+2025-01-19 12:12:35,427 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 12:12:36,410 - INFO - Dataset successfully structured into time steps.
+2025-01-19 12:12:36,411 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 12:12:36,413 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 12:12:36,414 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 12:12:36,421 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 12:12:36,421 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 12:12:36,422 - INFO - AMBER model initialized.
+2025-01-19 12:12:36,423 - INFO - Training started.
+2025-01-19 12:12:36,423 - ERROR - Training error: K-Fold Cross Validation failed. Reason: k-fold cross-validation requires at least one train/test split by setting n_splits=2 or more, got n_splits=1.
+Traceback (most recent call last):
+  File "main.py", line 178, in main
+    kfold_cv.run()
+  File "C:\Users\jamie\Desktop\Projects\AMBER\AMBER\OsdbDataProcessor\k_fold_cross_validation.py", line 94, in run
+    kf = KFold(n_splits=self.k, shuffle=True)
+  File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\sklearn\model_selection\_split.py", line 480, in __init__
+    super().__init__(n_splits=n_splits, shuffle=shuffle, random_state=random_state)
+  File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\sklearn\model_selection\_split.py", line 321, in __init__
+    raise ValueError(
+ValueError: k-fold cross-validation requires at least one train/test split by setting n_splits=2 or more, got n_splits=1.
+2025-01-19 12:13:35,392 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 12:13:37,627 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 12:13:37,627 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 12:13:40,026 - INFO - Dataset reshaped successfully.
+2025-01-19 12:13:40,026 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 12:13:40,052 - INFO - Interpolation completed successfully.
+2025-01-19 12:13:40,052 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 12:13:40,993 - INFO - Dataset successfully structured into time steps.
+2025-01-19 12:13:40,993 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 12:13:40,995 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 12:13:40,995 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 12:13:41,002 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 12:13:41,002 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 12:13:41,002 - INFO - AMBER model initialized.
+2025-01-19 12:13:41,002 - INFO - Training started.
+2025-01-19 12:15:09,109 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 12:15:09,109 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 12:15:15,251 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 12:15:15,252 - INFO - - Accuracy: 0.4696
+2025-01-19 12:15:15,252 - INFO - - F1 Score: 0.3030
+2025-01-19 12:15:15,252 - INFO - Step 9: Save model.
+2025-01-19 12:15:15,609 - INFO - Step 10: Load model
+2025-01-19 12:15:15,882 - INFO - Model Loaded.
+2025-01-19 12:15:15,882 - INFO - Pipeline execution completed successfully.
+2025-01-19 13:31:42,947 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 13:31:44,883 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 13:31:44,883 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 13:31:46,960 - INFO - Dataset reshaped successfully.
+2025-01-19 13:31:46,961 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 13:31:46,987 - INFO - Interpolation completed successfully.
+2025-01-19 13:31:46,987 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 13:31:47,954 - INFO - Dataset successfully structured into time steps.
+2025-01-19 13:31:47,955 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 13:31:47,957 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 13:31:47,957 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 13:31:47,963 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 13:31:47,963 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 13:31:47,964 - INFO - AMBER model initialized.
+2025-01-19 13:31:47,965 - INFO - Training started.
+2025-01-19 13:33:39,292 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 13:33:39,292 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 13:33:46,773 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 13:33:46,774 - INFO - - Accuracy: 0.4871
+2025-01-19 13:33:46,774 - INFO - - F1 Score: 0.4150
+2025-01-19 13:33:46,774 - INFO - Step 9: Save model.
+2025-01-19 13:33:47,162 - INFO - Step 10: Load model
+2025-01-19 13:33:47,186 - ERROR - Load model error: Failed to load AMBER model as .keras file format. Reason: load_model() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "main.py", line 219, in main
+    model = ts_model.load_model(path=model_load_path)
+TypeError: load_model() missing 1 required positional argument: 'self'
+2025-01-19 13:44:06,467 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 13:44:08,446 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 13:44:08,447 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 13:44:10,639 - INFO - Dataset reshaped successfully.
+2025-01-19 13:44:10,640 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 13:44:10,670 - INFO - Interpolation completed successfully.
+2025-01-19 13:44:10,670 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 13:44:11,648 - INFO - Dataset successfully structured into time steps.
+2025-01-19 13:44:11,648 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 13:44:11,650 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 13:44:11,650 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 13:44:11,656 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 13:44:11,657 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 13:44:11,657 - INFO - AMBER model initialized.
+2025-01-19 13:44:11,658 - INFO - Training started.
+2025-01-19 13:45:55,622 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 13:45:55,622 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 13:46:01,951 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 13:46:01,951 - INFO - - Accuracy: 0.5430
+2025-01-19 13:46:01,952 - INFO - - F1 Score: 0.4505
+2025-01-19 13:46:01,953 - INFO - Step 9: Save model.
+2025-01-19 13:46:02,276 - INFO - Step 10: Load model
+2025-01-19 13:46:02,295 - ERROR - Load model error: Failed to load AMBER model as .keras file format. Reason: load_model() got multiple values for argument 'path'
+Traceback (most recent call last):
+  File "main.py", line 219, in main
+    model = ts_model.load_model(path=model_load_path)
+TypeError: load_model() got multiple values for argument 'path'
+2025-01-19 13:51:23,871 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 13:51:25,853 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 13:51:25,854 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 13:51:28,035 - INFO - Dataset reshaped successfully.
+2025-01-19 13:51:28,035 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 13:51:28,066 - INFO - Interpolation completed successfully.
+2025-01-19 13:51:28,066 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 13:51:29,091 - INFO - Dataset successfully structured into time steps.
+2025-01-19 13:51:29,091 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 13:51:29,094 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 13:51:29,095 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 13:51:29,101 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 13:51:29,102 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 13:51:29,102 - INFO - AMBER model initialized.
+2025-01-19 13:51:29,103 - INFO - Training started.
+2025-01-19 13:53:08,390 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 13:53:08,390 - INFO - Step 8: Evaluating model performance on the test dataset.
+2025-01-19 13:53:14,301 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 13:53:14,302 - INFO - - Accuracy: 0.5129
+2025-01-19 13:53:14,302 - INFO - - F1 Score: 0.4104
+2025-01-19 13:53:14,303 - INFO - Step 9: Save model.
+2025-01-19 13:53:14,605 - INFO - Step 10: Load model
+2025-01-19 13:53:17,910 - INFO - Model Loaded.
+2025-01-19 13:53:18,011 - ERROR - Load model error: Failed to load AMBER model as .keras file format. Reason: in user code:
+
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\input_spec.py", line 219, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Layer "model_1" expects 3 input(s), but it received 2 input tensors. Inputs received: [<tf.Tensor 'IteratorGetNext:0' shape=(None, 125, 1) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(None, 125, 1) dtype=float32>]
+Traceback (most recent call last):
+  File "main.py", line 228, in main
+    results_df = model_tester.batch_predict(filtered_data)
+  File "C:\Users\jamie\Desktop\Projects\AMBER\AMBER\OsdbDataProcessor\model_tester.py", line 45, in batch_predict
+    prediction = self.model.predict([reshaped_segments, reshaped_hr])
+  File "C:\Users\jamie\Desktop\Projects\AMBER\AMBER\OsdbDataProcessor\model.py", line 128, in predict
+    return self.model.predict(X)
+  File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\jamie\AppData\Local\Temp\__autograph_generated_fileo8ume87q.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\input_spec.py", line 219, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Layer "model_1" expects 3 input(s), but it received 2 input tensors. Inputs received: [<tf.Tensor 'IteratorGetNext:0' shape=(None, 125, 1) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(None, 125, 1) dtype=float32>]
+
+2025-01-19 13:59:31,800 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 13:59:33,894 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 13:59:33,894 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 13:59:36,312 - INFO - Dataset reshaped successfully.
+2025-01-19 13:59:36,313 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 13:59:36,341 - INFO - Interpolation completed successfully.
+2025-01-19 13:59:36,342 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 13:59:37,268 - INFO - Dataset successfully structured into time steps.
+2025-01-19 13:59:37,268 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 13:59:37,270 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 13:59:37,270 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 13:59:37,276 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 13:59:37,277 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 13:59:37,277 - INFO - AMBER model initialized.
+2025-01-19 13:59:37,278 - INFO - Training started.
+2025-01-19 14:00:56,636 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 14:00:56,637 - INFO - Step 8: Save model.
+2025-01-19 14:00:56,927 - INFO - Step 9: Load model.
+2025-01-19 14:00:56,927 - ERROR - Saving model error: Failed to save AMBER model. Reason: load_model() got multiple values for argument 'path'
+Traceback (most recent call last):
+  File "main.py", line 198, in main
+    ts_model = ts_model.load_model(path=model_save_path)
+TypeError: load_model() got multiple values for argument 'path'
+2025-01-19 14:00:56,928 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 14:01:00,007 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 14:01:00,007 - INFO - - Accuracy: 0.4696
+2025-01-19 14:01:00,008 - INFO - - F1 Score: 0.3001
+2025-01-19 14:01:00,008 - INFO - Pipeline execution completed successfully.
+2025-01-19 14:04:06,974 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 14:04:08,952 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 14:04:08,952 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 14:04:11,210 - INFO - Dataset reshaped successfully.
+2025-01-19 14:04:11,211 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 14:04:11,242 - INFO - Interpolation completed successfully.
+2025-01-19 14:04:11,242 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 14:04:12,208 - INFO - Dataset successfully structured into time steps.
+2025-01-19 14:04:12,209 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 14:04:12,211 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 14:04:12,211 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 14:04:12,217 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 14:04:12,217 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 14:04:12,218 - INFO - AMBER model initialized.
+2025-01-19 14:04:12,218 - INFO - Training started.
+2025-01-19 14:05:37,519 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 14:05:37,519 - INFO - Step 8: Save model.
+2025-01-19 14:05:37,825 - INFO - Step 9: Load model.
+2025-01-19 14:05:41,431 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 14:05:50,217 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 14:05:50,218 - INFO - - Accuracy: 0.4712
+2025-01-19 14:05:50,218 - INFO - - F1 Score: 0.3192
+2025-01-19 14:05:50,219 - INFO - Pipeline execution completed successfully.
+2025-01-19 14:12:13,467 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 14:12:15,503 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 14:12:15,503 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 14:12:17,689 - INFO - Dataset reshaped successfully.
+2025-01-19 14:12:17,689 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 14:12:17,717 - INFO - Interpolation completed successfully.
+2025-01-19 14:12:17,718 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 14:12:18,743 - INFO - Dataset successfully structured into time steps.
+2025-01-19 14:12:18,744 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 14:12:18,746 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 14:12:18,747 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 14:12:18,753 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 14:12:18,753 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 14:12:18,754 - INFO - AMBER model initialized.
+2025-01-19 14:12:18,755 - INFO - Training started.
+2025-01-19 14:13:37,594 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 14:13:37,594 - INFO - Step 8: Save model.
+2025-01-19 14:13:37,870 - INFO - Step 9: Load model.
+2025-01-19 14:13:41,247 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 14:13:48,251 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 14:13:48,251 - INFO - - Accuracy: 0.4671
+2025-01-19 14:13:48,252 - INFO - - F1 Score: 0.3019
+2025-01-19 14:13:48,252 - INFO - Pipeline execution completed successfully.
+2025-01-19 14:34:39,448 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 14:34:41,362 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 14:34:41,363 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 14:34:43,509 - INFO - Dataset reshaped successfully.
+2025-01-19 14:34:43,509 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 14:34:43,537 - INFO - Interpolation completed successfully.
+2025-01-19 14:34:43,537 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 14:34:44,486 - INFO - Dataset successfully structured into time steps.
+2025-01-19 14:34:44,487 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 14:34:44,488 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 14:34:44,489 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 14:34:44,495 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 14:34:44,495 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 14:34:44,495 - INFO - AMBER model initialized.
+2025-01-19 14:34:44,496 - INFO - Training started.
+2025-01-19 14:36:16,100 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 14:36:16,100 - INFO - Step 8: Save model.
+2025-01-19 14:36:16,387 - INFO - Step 9: Load model.
+2025-01-19 14:36:19,637 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 14:36:19,637 - ERROR - Evaluation error: Model evaluation failed. Reason: name 'X_test_feature_1' is not defined
+Traceback (most recent call last):
+  File "main.py", line 221, in main
+    [X_test_feature_1, X_test_feature_2, X_test_feature_3],
+NameError: name 'X_test_feature_1' is not defined
+2025-01-19 14:37:48,420 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 14:37:50,357 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 14:37:50,357 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 14:37:52,589 - INFO - Dataset reshaped successfully.
+2025-01-19 14:37:52,590 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 14:37:52,620 - INFO - Interpolation completed successfully.
+2025-01-19 14:37:52,620 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 14:37:53,559 - INFO - Dataset successfully structured into time steps.
+2025-01-19 14:37:53,560 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 14:37:53,562 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 14:37:53,562 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 14:37:53,568 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 14:37:53,569 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 14:37:53,569 - INFO - AMBER model initialized.
+2025-01-19 14:37:53,570 - INFO - Training started.
+2025-01-19 14:39:49,069 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 14:39:49,069 - INFO - Step 8: Save model.
+2025-01-19 14:39:49,361 - INFO - Step 9: Load model.
+2025-01-19 14:39:52,687 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 14:40:01,088 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 14:40:01,089 - INFO - - Accuracy: 0.5571
+2025-01-19 14:40:01,089 - INFO - - F1 Score: 0.5425
+2025-01-19 14:40:01,090 - INFO - Pipeline execution completed successfully.
+2025-01-19 14:57:56,849 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 14:57:58,860 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 14:57:58,860 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 14:58:00,977 - INFO - Dataset reshaped successfully.
+2025-01-19 14:58:00,978 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 14:58:01,009 - INFO - Interpolation completed successfully.
+2025-01-19 14:58:01,009 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 14:58:02,015 - INFO - Dataset successfully structured into time steps.
+2025-01-19 14:58:02,016 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 14:58:02,017 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 14:58:02,018 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 14:58:02,024 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 14:58:02,024 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 14:58:02,025 - INFO - AMBER model initialized.
+2025-01-19 14:58:02,026 - INFO - Training started.
+2025-01-19 15:02:38,425 - INFO - Step 1: Establishing connection to OSDB.
+2025-01-19 15:02:40,402 - INFO - Connection to OSDB established and data loaded successfully.
+2025-01-19 15:02:40,403 - INFO - Step 2: Reshaping raw dataset for further processing.
+2025-01-19 15:02:42,553 - INFO - Dataset reshaped successfully.
+2025-01-19 15:02:42,553 - INFO - Step 3: Performing interpolation to fill missing values in dataset.
+2025-01-19 15:02:42,584 - INFO - Interpolation completed successfully.
+2025-01-19 15:02:42,584 - INFO - Step 4: Structuring dataset into time steps for model input.
+2025-01-19 15:02:43,562 - INFO - Dataset successfully structured into time steps.
+2025-01-19 15:02:43,562 - INFO - Step 5: Splitting dataset into training and testing subsets by event ID.
+2025-01-19 15:02:43,564 - INFO - Dataset split completed successfully into training and testing subsets.
+2025-01-19 15:02:43,564 - INFO - Step 6: Formatting dataset for compatibility with the AMBER model.
+2025-01-19 15:02:43,572 - INFO - Dataset successfully formatted for AMBER model input.
+2025-01-19 15:02:43,572 - INFO - Step 7: Initializing AMBER model and starting training with K-Fold Cross Validation.
+2025-01-19 15:02:43,572 - INFO - AMBER model initialized.
+2025-01-19 15:02:43,573 - INFO - Training started.
+2025-01-19 15:43:49,080 - INFO - K-Fold Cross Validation completed. All folds processed successfully.
+2025-01-19 15:43:49,081 - INFO - Step 8: Save model.
+2025-01-19 15:43:49,421 - INFO - Step 9: Load model.
+2025-01-19 15:43:53,114 - INFO - Step 10: Evaluating model performance on the test dataset.
+2025-01-19 15:44:06,965 - INFO - Model evaluation completed. Performance metrics:
+2025-01-19 15:44:06,965 - INFO - - Accuracy: 0.6347
+2025-01-19 15:44:06,966 - INFO - - F1 Score: 0.6332
+2025-01-19 15:44:06,966 - INFO - Pipeline execution completed successfully.

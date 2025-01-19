@@ -83,7 +83,7 @@ class SeizurePredictior:
 
         # Calculate metrics for each group
         def calculate_metrics_for_group(group):
-            cm = confusion_matrix(group['y_true'], group['y_pred'], labels=[0, 1, 2])
+            cm = confusion_matrix(group['y_true'], group['y_pred'], labels=[0, 1])
             accuracy = accuracy_score(group['y_true'], group['y_pred'])
             TP = np.diag(cm)
             FP = cm.sum(axis=0) - TP
@@ -191,7 +191,7 @@ class SeizurePredictior:
 
     def _plot_event_metrics_fpr_fnr(self, event_metrics):
         fig, ax = plt.subplots(figsize=(9, 3))
-
+        x = np.arange(len(event_metrics['eventId']))  # Update x for eventID
         ax.bar(x - 0.15, event_metrics['FAR'], 0.3, label='FAR (False Alarm Rate)')
         ax.bar(x, event_metrics['FPR'], 0.3, label='FPR (False Positive Rate)')
         ax.bar(x + 0.15, event_metrics['FNR'], 0.3, label='FNR (False Negative Rate)')

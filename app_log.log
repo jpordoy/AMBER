@@ -1,0 +1,150 @@
+2024-12-23 23:36:24,026 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-23 23:36:26,562 - INFO - Data processing complete.
+2024-12-23 23:36:28,970 - INFO - Data reshaping complete.
+2024-12-23 23:36:29,013 - INFO - Data interpolation complete.
+2024-12-23 23:36:30,224 - INFO - Data loading complete.
+2024-12-23 23:36:30,224 - INFO - Data formatting complete.
+2024-12-23 23:36:30,224 - INFO - y_test reshaped complete.
+2024-12-23 23:36:30,224 - INFO - Model compiled complete.
+2024-12-23 23:39:14,373 - INFO - Cross-validation complete.
+2024-12-23 23:39:17,668 - INFO - Model evaluation complete.
+2024-12-23 23:39:17,668 - INFO - Accuracy: 0.5156765676567657
+2024-12-23 23:39:17,668 - INFO - F1 Score: 0.39680004034188215
+2024-12-23 23:39:17,673 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.90      0.68       687
+           1       0.11      0.02      0.03       525
+
+    accuracy                           0.52      1212
+   macro avg       0.33      0.46      0.35      1212
+weighted avg       0.36      0.52      0.40      1212
+
+2024-12-23 23:39:17,673 - INFO - Tasks Completed
+2024-12-23 23:55:31,741 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-23 23:55:34,085 - INFO - Data processing complete.
+2024-12-23 23:55:36,629 - INFO - Data reshaping complete.
+2024-12-23 23:55:36,666 - INFO - Data interpolation complete.
+2024-12-23 23:55:37,890 - INFO - Data loading complete.
+2024-12-23 23:55:37,897 - INFO - Data formatting complete.
+2024-12-23 23:55:37,897 - INFO - y_test reshaped complete.
+2024-12-23 23:55:37,897 - INFO - Model initialized.
+2024-12-23 23:58:28,960 - INFO - Cross-validation complete.
+2024-12-23 23:58:32,312 - INFO - Model evaluation complete.
+2024-12-23 23:58:32,316 - INFO - Accuracy: 0.43316831683168316
+2024-12-23 23:58:32,316 - INFO - F1 Score: 0.2618461327998085
+2024-12-23 23:58:32,316 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       687
+           1       0.43      1.00      0.60       525
+
+    accuracy                           0.43      1212
+   macro avg       0.22      0.50      0.30      1212
+weighted avg       0.19      0.43      0.26      1212
+
+2024-12-23 23:58:32,317 - INFO - Tasks Completed
+2024-12-24 01:35:41,722 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 01:35:44,183 - INFO - Data processing complete.
+2024-12-24 01:35:46,610 - INFO - Data reshaping complete.
+2024-12-24 01:35:46,652 - INFO - Data interpolation complete.
+2024-12-24 01:35:47,842 - INFO - Data loading complete.
+2024-12-24 01:35:47,859 - INFO - Data formatting complete.
+2024-12-24 01:35:47,859 - INFO - y_test reshaped complete.
+2024-12-24 01:35:47,859 - INFO - Model initialized.
+2024-12-24 01:43:07,765 - ERROR - An error occurred: x and y must have same first dimension, but have shapes (25,) and (1,)
+2024-12-24 06:58:12,437 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 06:58:15,235 - INFO - Data processing complete.
+2024-12-24 06:58:18,413 - INFO - Data reshaping complete.
+2024-12-24 06:58:18,454 - INFO - Data interpolation complete.
+2024-12-24 06:58:19,855 - INFO - Data loading complete.
+2024-12-24 06:58:19,871 - INFO - Data formatting complete.
+2024-12-24 06:58:19,871 - INFO - y_test reshaped complete.
+2024-12-24 06:58:19,871 - INFO - Model initialized.
+2024-12-24 08:56:57,466 - INFO - Cross-validation complete.
+2024-12-24 08:57:08,875 - INFO - Model evaluation complete.
+2024-12-24 08:57:08,875 - INFO - Accuracy: 0.6336633663366337
+2024-12-24 08:57:08,875 - INFO - F1 Score: 0.635253463197755
+2024-12-24 08:57:08,875 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.70      0.63      0.66       687
+           1       0.57      0.64      0.60       525
+
+    accuracy                           0.63      1212
+   macro avg       0.63      0.63      0.63      1212
+weighted avg       0.64      0.63      0.64      1212
+
+2024-12-24 08:57:08,875 - INFO - Tasks Completed
+2024-12-24 10:35:54,801 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 10:35:57,779 - INFO - Data processing complete.
+2024-12-24 10:36:01,065 - INFO - Data reshaping complete.
+2024-12-24 10:36:01,094 - INFO - Data interpolation complete.
+2024-12-24 10:36:02,503 - INFO - Data loading complete.
+2024-12-24 10:36:02,519 - INFO - Data formatting complete.
+2024-12-24 10:36:02,519 - INFO - y_test reshaped complete.
+2024-12-24 10:36:02,519 - INFO - Model initialized.
+2024-12-24 10:36:06,130 - ERROR - An error occurred: train_model() got an unexpected keyword argument 'epochs'
+2024-12-24 10:36:51,718 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 10:36:54,574 - INFO - Data processing complete.
+2024-12-24 10:36:57,096 - INFO - Data reshaping complete.
+2024-12-24 10:36:57,130 - INFO - Data interpolation complete.
+2024-12-24 10:36:58,538 - INFO - Data loading complete.
+2024-12-24 10:36:58,553 - INFO - Data formatting complete.
+2024-12-24 10:36:58,553 - INFO - y_test reshaped complete.
+2024-12-24 10:36:58,553 - INFO - Model initialized.
+2024-12-24 11:18:14,112 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 11:18:16,476 - INFO - Data processing complete.
+2024-12-24 11:18:19,037 - INFO - Data reshaping complete.
+2024-12-24 11:18:19,086 - INFO - Data interpolation complete.
+2024-12-24 11:18:20,284 - INFO - Data loading complete.
+2024-12-24 11:18:20,300 - INFO - Data formatting complete.
+2024-12-24 11:18:20,300 - INFO - y_test reshaped complete.
+2024-12-24 11:18:20,300 - INFO - Model initialized.
+2024-12-24 12:36:34,857 - ERROR - An error occurred: Graph execution error:
+
+Detected at node 'gradient_tape/model_2/conv1d_26/Conv1D/Conv2DBackpropFilter' defined at (most recent call last):
+    File "main.py", line 120, in <module>
+      main()
+    File "main.py", line 99, in main
+      kfold_cv.run()
+    File "C:\Users\jamie\Desktop\Projects\AMBER\AMBER\kfold_cv.py", line 115, in run
+      history = self.ts_model.train_model(X_fold_train, y_fold_train, X_fold_val, y_fold_val)
+    File "C:\Users\jamie\Desktop\Projects\AMBER\AMBER\model_rf.py", line 82, in train_model
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 1742, in fit
+      tmp_logs = self.train_function(iterator)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 1338, in train_function
+      return step_function(self, iterator)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 1322, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 1303, in run_step
+      outputs = model.train_step(data)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\engine\training.py", line 1084, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\optimizers\optimizer.py", line 543, in minimize
+      grads_and_vars = self.compute_gradients(loss, var_list, tape)
+    File "c:\Users\jamie\Desktop\Projects\AMBER\AMBER\.venv\lib\site-packages\keras\src\optimizers\optimizer.py", line 276, in compute_gradients
+      grads = tape.gradient(loss, var_list)
+Node: 'gradient_tape/model_2/conv1d_26/Conv1D/Conv2DBackpropFilter'
+OOM when allocating tensor with shape[228,31,192] and type float on /job:localhost/replica:0/task:0/device:CPU:0 by allocator cpu
+	 [[{{node gradient_tape/model_2/conv1d_26/Conv1D/Conv2DBackpropFilter}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info. This isn't available when running in Eager mode.
+ [Op:__inference_train_function_163426]
+2024-12-24 12:47:09,379 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-24 12:47:12,643 - INFO - Data processing complete.
+2024-12-24 12:47:15,848 - INFO - Data reshaping complete.
+2024-12-24 12:47:15,899 - INFO - Data interpolation complete.
+2024-12-24 12:47:17,303 - INFO - Data loading complete.
+2024-12-24 12:47:17,311 - INFO - Data formatting complete.
+2024-12-24 12:47:17,312 - INFO - y_test reshaped complete.
+2024-12-24 12:47:17,313 - INFO - Model initialized.
+2024-12-25 00:16:43,308 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-25 00:16:45,867 - INFO - Data processing complete.
+2024-12-25 00:16:48,478 - INFO - Data reshaping complete.
+2024-12-25 00:16:48,520 - INFO - Data interpolation complete.
+2024-12-25 00:16:49,750 - INFO - Data loading complete.
+2024-12-25 00:16:49,763 - INFO - Data formatting complete.
+2024-12-25 00:16:49,764 - INFO - y_test reshaped complete.
+2024-12-25 00:16:49,764 - INFO - Model initialized.

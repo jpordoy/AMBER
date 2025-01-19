@@ -24,7 +24,7 @@ Data/ipd_labels.csv
 
 # Ignore model files (if not needed)
 *.h5
-*.keras
+#*.keras
 
 # Ignore temporary files (e.g., editor backup files)
 *~

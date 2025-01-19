@@ -1,6 +1,5 @@
-<div align="center">
-
-  <img src="Images/3.png" alt="logo" width="200" height="auto" />
+<div>
+<img src="Images/3.png" alt="logo" width="200" height="auto" text-align:center/>
 
 <p>
 AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) is an experimental deep learning architecture for biomedical engineering. Designed for one-dimensional, multimodal detection tasks, the architecture addresses the challenges of processing heterogeneous data sources by constructing independent pipelines for each feature modality
@@ -10,198 +9,124 @@ AMBER (Attention-guided Multi-Branching-pipeline with Enhanced Residual fusion) 
 
 <br />
 
-# :notebook_with_decorative_cover: Table of Contents
+---
+### 📂 Repository Structure
 
-- [About the Project](#star2-about-the-project)  
-  * [Tech Stack](#space_invader-tech-stack)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Contributing](#wave-contributing)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+```plaintext
 
-  
+AMBER/
+│
+├── app_log.log               # Application logs
+├── config.py                 # Configuration file with parameters
+├── data_loader.py            # Data loading utilities
+├── data_formatter.py         # Data formatting utilities
+├── event_metrics_evaluator.py # Event metrics evaluation
+├── kfold_cv.py               # K-fold cross-validation logic
+├── model_rf.py               # Residual fusion model definition
+├── model_evaluator.py        # Model evaluation utilities
+├── OsdbDataProcessor/        # Data Loading preprocessing and annotation for the OSDB
+│   ├── osdb_data_label_generator.py
+│   ├── osdb_data_reshaper.py
+│   └── osdb_interpolator.py
+├── main.py                   # Main entry point for the pipeline
+└── requirements.txt          # List of required Python packages
 
-<!-- About the Project -->
-## :star2: About the Project
-
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="Images/Branches_2.png" alt="screenshot" />
-</div>
-
-# Project Title
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed on your system:
-
-- Python
-- `pip` (Python package installer)
-
-### Installation
-
-# Navigate to the Project Directory
-```bash
- cd your-repo
 ```
+---
 
-# Clone Repository
+### Setup Instructions
+
+#### 1. Clone the Repository 📂
+Clone the repository using Git:
+
 ```bash
 git clone https://github.com/jpordoy/AMBER.git
+cd AMBER
 ```
+---
 
+#### 2. Create and Activate a Virtual Environment
+Ensure you're using Python 3.8 for the project. You can create a virtual environment using the following commands:
 
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
-
+#### For Linux/MacOS:
 ```bash
- npm install --global yarn
+python3.8 -m venv venv
+source venv/bin/activate
 ```
-
-<!-- Installation -->
-### :gear: Installation
-
-  
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
-
+#### For Windows
 ```bash
-  yarn test test
+python -m venv venv
+venv\Scripts\activate
 ```
 
-<!-- Run Locally -->
-### :running: Run Locally
-
-Clone the project
-
+#### 3. Install Dependencies
+Install the required dependencies using pip and the requirements.txt file provided:
 ```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+Copy code
+pip install -r requirements.txt
 ```
+---
 
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  yarn install
-```
-
-### How To Run The Code
+### ▶️ How To Run The Code
 Please put your training data as a csv file in the "Data/" of this project.
 
-```python        
-import pandas as pd
-import numpy as np
+```python
+
+from config import Config as config
+from OsdbDataProcessor.osdb_data_label_generator import OsdbDataLabelGenerator
+from OsdbDataProcessor.osdb_data_reshaper import OsdbDataReshaper
+from OsdbDataProcessor.osdb_interpolator import OsdbInterpolator
 from data_loader import DataLoader
 from data_formatter import DataFormatter
-from model import Amber
+from model_rf import Amber_RF
 from kfold_cv import KFoldCrossValidation
-from evaluator import evaluate_model_performance
-from config import config
+from model_evaluator import ModelEvaluator
+from event_metrics_evaluator import EventMetricsEvaluator
 
-# Define your DataFrame and parameter
-mypath = 'Data/Train.csv'
-df = pd.read_csv(mypath)
-target_column = 'label'  # Name of the target column
+if __name__ == "__main__":
+    
+    # Example usage:
+    # Instructions for processing the data, reshaping it, and interpolating the 'hr' column
+    # can be found in the OsdbDataProcessor component for the OSDB.
 
-# Step 1: Load Data
-data_loader = DataLoader(dataframe=df, time_steps=config.N_TIME_STEPS, step=config.step, target_column=target_column)
-segments, labels = data_loader.load_data()
+    # Ensure you follow the steps in the OSDBDataProcessor for:
+    # 1. Data processing using the OsdbLabelGenerator
+    # 2. Data reshaping with the DataReshaper
+    # 3. Interpolation of the 'hr' column with the Interpolator
 
-# Step 2: Format Data
-data_formatter = DataFormatter(config=config)
-X_train_reshaped, X_test_reshaped, y_train, y_test = data_formatter.format_data(segments, labels)
+    # Initialize DataLoader
+    data_loader = DataLoader(dataframe=interpolated_df, time_steps=config.N_TIME_STEPS, step=config.step, target_column='label')
+    # Load data (this will return a DataFrame with segments, labels, eventID, and userID)
+    df_labels = data_loader.load_data()
 
-# Reshape y_test correctly
-y_test_reshaped = np.asarray(y_test, dtype=np.float32)
+    # Specify the test event IDs, otherwise split by Random
+    priority_test_event_ids = [5595, 5596, ... ,5610]
 
-# Initialize model
-ts_model = Amber(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=config.N_CLASSES)
+    # Initialize DataFormatter
+    data_formatter = DataFormatter(config)
 
-# Create an instance of KFoldCrossValidation
-kfold_cv = KFoldCrossValidation(ts_model, [X_train_reshaped['Feature_1'], X_train_reshaped['Feature_2']], y_train)
+    # Split the data by eventID into train and test sets
+    X_train_reshaped, X_test_reshaped, y_train, y_test = data_formatter.format_data(df_labels, priority_test_event_ids)
+    # Reshape y_test correctly
+    y_test_reshaped = np.asarray(y_test, dtype=np.float32)
+    
+    # Initialize model with residual fusion layer
+    ts_model = Amber_RF(row_hidden=config.row_hidden, col_hidden=config.row_hidden, num_classes=2)
+    # Build the model    
+    
+    # Create an instance of KFoldCrossValidation
+    kfold_cv = KFoldCrossValidation(ts_model, [X_train_reshaped['Feature_1'], X_train_reshaped['Feature_2'], X_train_reshaped['Feature_3']], y_train)
 
-# Run the cross-validation
-kfold_cv.run()
-
-# Evaluate the model performance
-evaluation_results = evaluate_model_performance(ts_model, [X_test_reshaped['Feature_1'], X_test_reshaped['Feature_2']], y_test_reshaped)
-
-# Access individual metrics
-print("Accuracy:", evaluation_results["accuracy"])
-print("F1 Score:", evaluation_results["f1"])
-print("Cohen's Kappa:", evaluation_results["cohen_kappa"])
-
+    # Run the cross-validation
+    kfold_cv.run()
+    
+    # Evaluate the model performance
+    evaluation_results = evaluate_model_performance(ts_model, [X_test_reshaped['Feature_1'], X_test_reshaped['Feature_2'], X_test_reshaped['Feature_3']], y_test_reshaped)
+    print("\nOverall Classification Results\n")
+    # Access individual metrics
+    print("Accuracy:", evaluation_results["accuracy"])
+    print("F1 Score:", evaluation_results["f1"])
 ```
-
-
-
-
-<!-- Contributing -->
-## :wave: Contributing
-
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
-
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- FAQ -->
-## :grey_question: FAQ
-
-- Question 1
-
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
-
-
-<!-- Contact -->
-## :handshake: Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
-
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
+---
 
 

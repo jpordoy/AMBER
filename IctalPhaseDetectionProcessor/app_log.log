@@ -1,0 +1,47 @@
+2025-01-04 22:41:54,029 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2025-01-04 22:41:54,029 - ERROR - An error occurred: __init__() missing 1 required positional argument: 'time_steps'
+2025-01-04 22:43:21,528 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2025-01-04 22:43:21,528 - ERROR - An error occurred: [Errno 2] No such file or directory: 'Data/osdb_3min_allSeizures.json'
+2025-01-04 22:43:32,909 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-04 22:43:33,366 - ERROR - An error occurred: 'OsdbDataLoader' object has no attribute 'process_data'
+2025-01-04 22:43:49,213 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-04 22:43:50,017 - INFO - Data processing complete.
+2025-01-04 22:43:50,017 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-04 22:50:19,669 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-04 22:50:20,635 - INFO - Data processing complete.
+2025-01-04 22:50:20,636 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-04 22:51:15,509 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-04 22:51:16,331 - INFO - Data processing complete.
+2025-01-04 22:51:16,332 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-05 14:48:06,228 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:48:07,131 - INFO - Data processing complete.
+2025-01-05 14:48:07,132 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-05 14:48:12,352 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:48:13,417 - INFO - Data processing complete.
+2025-01-05 14:48:13,418 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-05 14:49:50,775 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:49:51,633 - INFO - Data processing complete.
+2025-01-05 14:49:51,634 - ERROR - An error occurred: 'NoneType' object has no attribute 'iterrows'
+2025-01-05 14:50:58,501 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:50:59,271 - INFO - Data processing complete.
+2025-01-05 14:50:59,271 - ERROR - An error occurred: Invalid DataFrame provided to IpdDataReshaper.
+2025-01-05 14:51:41,134 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:51:41,999 - INFO - Data processing complete.
+2025-01-05 14:51:41,999 - ERROR - An error occurred: Invalid DataFrame provided to IpdDataReshaper.
+2025-01-05 14:52:03,033 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:52:03,803 - INFO - None
+2025-01-05 14:52:03,803 - INFO - Data processing complete.
+2025-01-05 14:52:03,803 - ERROR - An error occurred: Invalid DataFrame provided to IpdDataReshaper.
+2025-01-05 14:55:44,314 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:55:45,417 - INFO - None
+2025-01-05 14:55:45,417 - INFO - Data processing complete.
+2025-01-05 14:55:45,417 - ERROR - An error occurred: Invalid DataFrame provided to IpdDataReshaper.
+2025-01-05 14:56:40,807 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:56:41,798 - INFO - Data processing complete.
+2025-01-05 14:57:18,754 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 14:57:41,207 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 15:01:17,963 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 15:01:58,508 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 15:02:05,353 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 15:30:03,558 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json
+2025-01-05 15:30:09,870 - INFO - Loading data from ../Data/osdb_3min_allSeizures.json

@@ -1,0 +1,9 @@
+2024-12-23 22:53:29,751 - INFO - Loading data from Data/osdb_3min_allSeizures.json
+2024-12-23 22:53:32,597 - INFO - Data processing complete.
+2024-12-23 22:53:35,359 - INFO - Data reshaping complete.
+2024-12-23 22:53:35,397 - INFO - Data interpolation complete.
+2024-12-23 22:53:36,576 - INFO - Data loading complete.
+2024-12-23 22:53:36,592 - INFO - Data formatting complete.
+2024-12-23 22:53:36,592 - INFO - y_test reshaped:
+2024-12-23 22:53:36,601 - INFO - Model initialized.
+2024-12-23 22:56:33,726 - INFO - Cross-validation complete.

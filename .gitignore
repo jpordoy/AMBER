@@ -1,0 +1,30 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore environment-related files
+venv/
+env/
+*.env
+
+# Ignore log files
+#*.log
+
+# Ignore dataset and other large files
+Data/ipd_dataset.csv
+Data/binary_osd_labels.csv
+Data/ipd_labels.csv
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model files (if not needed)
+*.h5
+#*.keras
+
+# Ignore temporary files (e.g., editor backup files)
+*~

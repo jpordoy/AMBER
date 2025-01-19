@@ -15,7 +15,7 @@ class KFoldCrossValidation:
         #self.epochs = epochs
         self.k = k
         self.save_dir = save_dir
-        os.makedirs(self.save_dir, exist_ok=True)  # Create directory if it doesn't exist
+        os.makedirs(self.save_dir, exist_ok=True)  # Create directory if it doesn't exist to save plots
         self.history_accumulated = {"accuracy": [], "loss": [], "val_accuracy": [], "val_loss": []}  # Initialize empty dictionaries to accumulate metrics
         self.fold_history = []  # Initialize list to store individual fold histories
 

@@ -7,7 +7,7 @@ from sklearn.metrics import (classification_report, accuracy_score, f1_score, co
 from config import Config
 
 class KFoldCrossValidation:
-    def __init__(self, ts_model, X_train, y_train, k=Config.k, save_dir='plots'):
+    def __init__(self, ts_model, X_train, y_train, k=Config.k, save_dir='Plots'):
         self.ts_model = ts_model
         self.X_train = X_train
         self.y_train = y_train
